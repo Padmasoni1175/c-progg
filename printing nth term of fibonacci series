@@ -1,0 +1,15 @@
+#include <stdio.h>
+long fibo(int num)
+{
+    if (num <= 1)
+    return num;
+    return fibo(num - 1) + fibo(num - 2);
+}
+int main()
+{
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("\nThe %dth fibonacci number is %ld", num, fibo(num));
+    return 0;
+}
